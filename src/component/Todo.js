@@ -9,7 +9,6 @@ import {
   DialogTitle,
   DialogActions,
   DialogContent,
-  TextareaAutosize,
 } from "@material-ui/core";
 import DeleteForeverIcon from "@material-ui/icons/DeleteForever";
 import CloseIcon from "@material-ui/icons/Close";
@@ -20,9 +19,6 @@ function Todo(props) {
   const [open, setOpen] = useState(false);
   const [input, setInput] = useState();
 
-  const handleOpen = () => {
-    setOpen(true);
-  };
   const updateTodo = () => {
     db.collection("todos").doc(props.todo.id).set(
       {
