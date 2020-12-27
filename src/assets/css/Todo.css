@@ -1,0 +1,18 @@
+.todo__list,
+.App {
+  text-align: center;
+  font-family: "poppins";
+}
+
+.MuiSvgIcon-root {
+  fill: red !important;
+}
+
+.MuiDialogActions-root {
+  justify-content: center !important;
+}
+
+h2 .close {
+  right: 0;
+  top: 7px;
+}
